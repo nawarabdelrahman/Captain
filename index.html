@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      مناحل الكابتن – عسل نحل طبيعي ومنتجات النحل | El Captain Apiaries
+    </title>
+    <meta
+      name="description"
+      content="مناحل الكابتن: عسل طبيعي، غذاء ملكات النحل، حبوب لقاح، شمع نحل، أعشاب ومكملات. اطلب مباشرة عبر واتساب."
+    />
+    <meta property="og:title" content="مناحل الكابتن – عسل نحل طبيعي" />
+    <meta
+      property="og:description"
+      content="جودة الطبيعة في كل قطرة. اطلب عبر واتساب."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS: script.js swaps this file between LTR/RTL builds -->
+    <link
+      id="bs-css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="CSS/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top nav-honey">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home"
+          ><i class="bi bi-hexagon-fill"></i> <span data-i18n="brand"></span
+        ></a>
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button class="btn btn-icon" id="langBtn" aria-label="Language">
+            EN
+          </button>
+          <button class="btn btn-icon" id="themeBtn" aria-label="Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button
+            class="btn btn-icon position-relative"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cart"
+            aria-label="Cart"
+          >
+            <i class="bi bi-bag"></i
+            ><span
+              id="cartCount"
+              class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"
+              >0</span
+            >
+          </button>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-label="Menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" data-i18n="nav_home"></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#products"
+                data-filter="all"
+                data-i18n="nav_all"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#products"
+                data-filter="honey"
+                data-i18n="nav_honey"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#products"
+                data-filter="bee"
+                data-i18n="nav_bee"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-i18n="nav_about"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-i18n="nav_contact"></a>
+            </li>
+          </ul>
+          <a class="btn btn-wa wa-general mx-2" target="_blank" rel="noopener"
+            ><i class="bi bi-whatsapp"></i> <span data-i18n="wa_order"></span
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 reveal">
+            <h1 data-i18n="hero_h"></h1>
+            <p class="lead" data-i18n="hero_p"></p>
+            <a
+              href="#products"
+              class="btn btn-gold btn-lg me-2"
+              data-i18n="shop"
+            ></a>
+            <a
+              href="#products"
+              class="btn btn-outline-gold btn-lg"
+              data-i18n="discover"
+            ></a>
+          </div>
+          <div class="col-lg-6 text-center reveal">
+            <div id="heroArt" class="hero-art"></div>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="drip"
+        viewBox="0 0 1200 60"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 0H1200V20Q1150 20 1140 45T1120 20 1040 20 1020 55 1000 20 900 20 880 40 860 20 700 20 680 50 660 20 500 20 470 45 450 20 300 20 280 55 260 20 120 20 100 40 80 20 0 20Z"
+        />
+      </svg>
+    </header>
+
+    <main>
+      <section id="products" class="py-5">
+        <div class="container">
+          <h2 class="sec-title text-center" data-i18n="products"></h2>
+          <div class="row g-3 justify-content-center mb-4">
+            <div class="col-md-5">
+              <input
+                id="search"
+                class="form-control"
+                type="search"
+                data-i18n-ph="search"
+              />
+            </div>
+            <div
+              class="col-md-7 d-flex flex-wrap gap-2 justify-content-center"
+              id="filters"
+            >
+              <button
+                class="btn btn-sm btn-chip active"
+                data-filter="all"
+                data-i18n="f_all"
+              ></button>
+              <button
+                class="btn btn-sm btn-chip"
+                data-filter="honey"
+                data-i18n="f_honey"
+              ></button>
+              <button
+                class="btn btn-sm btn-chip"
+                data-filter="bee"
+                data-i18n="f_bee"
+              ></button>
+            </div>
+          </div>
+          <div class="row g-3" id="grid"></div>
+          <p id="empty" class="text-center d-none" data-i18n="empty"></p>
+        </div>
+      </section>
+
+      <section class="py-5 band">
+        <div class="container">
+          <h2 class="sec-title text-center" data-i18n="why"></h2>
+          <div class="row g-3" id="whyGrid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 reveal">
+              <div id="aboutArt" class="hero-art small"></div>
+            </div>
+            <div class="col-md-7 reveal">
+              <h2 class="sec-title" data-i18n="about_h"></h2>
+              <p class="fs-5" data-i18n="about_p"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 band">
+        <div class="container">
+          <h2 class="sec-title text-center" data-i18n="rev_h"></h2>
+          <p class="text-center small text-muted" data-i18n="rev_note"></p>
+          <div class="row g-3" id="reviews"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <h2 class="sec-title" data-i18n="contact_h"></h2>
+              <p class="fw-bold" data-i18n="brand"></p>
+              <p>
+                <i class="bi bi-envelope"></i> hossammansour202033@gmail.com
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-wa wa-general" target="_blank" rel="noopener"
+                  ><i class="bi bi-whatsapp"></i> WhatsApp</a
+                >
+                <a
+                  class="btn btn-fb"
+                  href="https://www.facebook.com/ElCaptain.hossam2020"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="bi bi-facebook"></i> Facebook</a
+                >
+                <a
+                  class="btn btn-gold"
+                  href="mailto:hossammansour202033@gmail.com"
+                  ><i class="bi bi-envelope"></i> Email</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form id="contactForm" novalidate class="card card-body">
+                <div class="mb-3">
+                  <label class="form-label" data-i18n="f_name"></label
+                  ><input
+                    name="n"
+                    class="form-control"
+                    required
+                    minlength="3"
+                  />
+                  <div class="invalid-feedback" data-i18n="err_name"></div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" data-i18n="f_email"></label
+                  ><input name="e" type="email" class="form-control" required />
+                  <div class="invalid-feedback" data-i18n="err_email"></div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" data-i18n="f_msg"></label
+                  ><textarea
+                    name="m"
+                    rows="4"
+                    class="form-control"
+                    required
+                    minlength="10"
+                  ></textarea>
+                  <div class="invalid-feedback" data-i18n="err_msg"></div>
+                </div>
+                <button class="btn btn-gold" data-i18n="send"></button>
+                <div
+                  id="formOk"
+                  class="alert alert-success mt-3 d-none"
+                  data-i18n="ok"
+                ></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>
+              <i class="bi bi-hexagon-fill"></i> <span data-i18n="brand"></span>
+            </h5>
+            <p data-i18n="foot_p"></p>
+            <a
+              class="btn btn-wa btn-sm wa-general"
+              target="_blank"
+              rel="noopener"
+              ><i class="bi bi-whatsapp"></i> WhatsApp</a
+            >
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 data-i18n="links"></h6>
+            <ul class="list-unstyled">
+              <li><a href="#home" data-i18n="nav_home"></a></li>
+              <li><a href="#products" data-i18n="nav_all"></a></li>
+              <li><a href="#about" data-i18n="nav_about"></a></li>
+              <li><a href="#contact" data-i18n="nav_contact"></a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 data-i18n="cats"></h6>
+            <ul class="list-unstyled">
+              <li data-i18n="f_honey"></li>
+              <li data-i18n="f_bee"></li>
+              <li data-i18n="f_extra"></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 data-i18n="contact_h"></h6>
+            <p class="small">hossammansour202033@gmail.com</p>
+            <a
+              href="https://www.facebook.com/ElCaptain.hossam2020"
+              target="_blank"
+              rel="noopener"
+              ><i class="bi bi-facebook"></i> Facebook</a
+            >
+          </div>
+        </div>
+        <hr />
+        <p class="text-center small mb-0" data-i18n="copy"></p>
+      </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" id="cart" tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 data-i18n="cart"></h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="cartItems" class="flex-grow-1"></div>
+        <div class="border-top pt-3">
+          <div id="cartTotal" class="fw-bold mb-2"></div>
+          <button id="checkout" class="btn btn-wa w-100">
+            <i class="bi bi-whatsapp"></i> <span data-i18n="checkout"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button id="toTop" class="btn btn-gold" aria-label="Top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
